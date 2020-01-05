@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--【P.0版】套用MaterializeCSS http://materializecss.com/getting-started.html ------------------>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+ <!--Include Animate CSS-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <!--Include Font Awesome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="/Users/linjiaer/Desktop/4105023007/css/index.css"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+
+<!------------------------------------------------------------------------------------------->
+    <meta charset="utf-8">
+	<title>diving</title>
+	<style type="text/css">
+      html,body {
+		
+        height: 50%;
+        margin: 0;
+        padding: 0;
+	  }
+	img{
+		position: relative;
+		left:0px;
+		top:0px;
+		z-index:-1;
+	}
+	h1{
+		font-family: monospace;
+	}
+	
+	  span{
+		  font-size: 50px;
+		  color:white;
+		  background-color:transparent;
+		  
+	  }
+	 
+    </style>
+  </head>
+  <body>
+ <header id="home" class="navbar-fixed ">
+	<!--Navbar-->
+    <nav class="transparent">
+	
+		<div>
+		  <a href="divinggg.html" class="brand-logo center" style="font-family: monospace;color:black">
+			Freediving
+		  </a>
+		  <a href="#" class="left sidenav-trigger show-on-medium-and-up" data-target="side-nav" style="color:black">
+			<i class="material-icons">menu</i>
+		  </a>
+		</div>
+		
+	  </nav>
+	  <!--Instruction Arrow-->
+	  <a href="#about" id="arrow" class="animated bounce infinite slow"></a>
+		</header>
+
+	<!--Side Nav-->
+	<ul class="sidenav  light-blue darken-3" id="side-nav">
+		
+		<li><a class="sidenav-close light-blue darken-3 waves-effect" href="divinggg.html">Home</a></li>
+		<li><a class="sidenav-close light-blue darken-3 waves-effect" href="intro.html">Introduction</a></li>
+		<li><a class="sidenav-close light-blue darken-3 waves-effect" href="location.html">Location</a></li>
+		<li><a class="sidenav-close light-blue darken-3 waves-effect" href="underwater.html">Underwater</a></li>
+		
+	</ul>
+	<div>	
+		<img src="https://images.squarespace-cdn.com/content/v1/53751510e4b065b57c0e5d56/1442630635032-QANCB0IO570INA1ZWE08/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/Freediving-Freedive-Adventure-Photography-05.jpg?format=2500w" width="100%">
+	
+	</div>
+	<div class="container center">
+		<h1>Underwater</h1>
+	</div>
+
+	<!-- 圖片 -->
+	<div class="center container materialboxed" id="demo"></div>
+	
+
+	  
+	 
+	 
+	 
+	 
+	 
+	
+
+
+
+	 <script>
+		$(document).ready(function() {
+		  var owl = $('.owl-carousel');
+		  owl.owlCarousel({
+			items: 1,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 1300,
+			autoplayHoverPause: true
+		  });
+		})
+					
+		var images =  new Array();
+		images[0] = "http://getwallpapers.com/wallpaper/full/b/7/4/1298212-freediving-wallpaper-1920x1080-for-android-40.jpg" ;
+		images[1] = "http://getwallpapers.com/wallpaper/full/6/b/9/1298222-beautiful-freediving-wallpaper-1920x1080.jpg";
+		images[2] = "http://getwallpapers.com/wallpaper/full/0/5/2/1298211-freediving-wallpaper-1920x1080-720p.jpg" ;
+		images[3] = "http://getwallpapers.com/wallpaper/full/e/3/3/1298266-top-freediving-wallpaper-1920x1080-for-ipad-pro.jpg" ;
+		images[4] = "http://getwallpapers.com/wallpaper/full/4/5/5/1298241-download-freediving-wallpaper-1920x1080-for-ipad.jpg" ;
+	
+
+		str = '<div class="owl-carousel owl-theme">';
+		for (i=0 ; i<=4; i++)
+			{
+			str += '<div class="item">';
+			str += 	'<img src="' + images[i] + '" />';
+			str += '</div>';
+			}
+		str += '</div>';
+		document.getElementById("demo").innerHTML = str;    	
+	  </script>
+
+	
+	
+	
+		  
+		
+
+
+	 
+	<!--【P.2版】套用MaterializeCSS Footer http://materializecss.com/footer.html -------------------->
+	<footer class="page-footer light-blue darken-3">
+	  <div class="container">
+		<div class="row">
+		  <div class="col l6 s12">
+			<h5><a class="white-text" href="#">about me</a></h5>
+			<a class="grey-text text-lighten-4" href="#">更多相關</a>
+		  </div>
+		  <div class="col l4 offset-l2 s12">
+			<h5 class="white-text">Links</h5>
+			<ul>
+			  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+			  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer-copyright light-blue darken-3">
+		<div class="container">
+		
+		</div>
+	  </div>
+	</footer>
+	<!----------------------------------------------------------------------------------------------->
+ <!--JavaScript at end of body for optimized loading-->
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <!-- javascript -->
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="/Users/linjiaer/Desktop/4105023007/js/materialize-initial.js"></script>
+
+   
+  </body class="container">
+</html>

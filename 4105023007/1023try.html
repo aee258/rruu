@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <!--【P.0版】套用MaterializeCSS http://materializecss.com/getting-started.html ------------------>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+ <!--Include Animate CSS-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <!--Include Font Awesome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="/Users/linjiaer/Desktop/4105023007/css/index.css"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+<meta charset="utf-8">
+	<title>diving</title>
+	<style type="text/css">
+      html,body {
+		
+        height: 50%;
+        margin: 0;
+        padding: 0;
+	  }
+	  h1{
+		  font-family:Microsoft YaHei;
+		  color:lightslategray;
+	  }
+	  h2{
+		  font-size: 30px;
+		  font-family:Microsoft YaHei;
+		  color:crimson;
+	  }
+	
+	  span{
+		  font-size: 50px;
+		  color:white;
+		  background-color:transparent;
+		  
+	  }
+	
+
+    </style>
+    <script type="text/javascript">
+        
+		// 取得網址裡的參數 
+		function GetUrlVar(VarName) 
+		{
+		  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		  var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+		  var regex = new RegExp(regexS);
+		  var results = regex.exec(window.location.href);
+		  if (results == null)
+		   	 return "";
+		  else
+			 return results[1];
+		}
+
+		  
+		  
+    </script>
+</head> 
+
+<body> 
+  <header id="home" class="navbar-fixed ">
+    <!--Navbar-->
+      <nav class="transparent">
+    
+      <div>
+        <a href="divinggg.html" class="brand-logo center" style="font-family: monospace;color:black">
+        Freediving
+        </a>
+        <a href="#" class="left sidenav-trigger show-on-medium-and-up" data-target="side-nav" style="color:black">
+        <i class="material-icons">menu</i>
+        </a>
+      </div>
+      
+      </nav>
+      <!--Instruction Arrow-->
+      <a href="#about" id="arrow" class="animated bounce infinite slow"></a>
+      </header>
+  
+    <!--Side Nav-->
+    <ul class="sidenav  light-blue darken-3" id="side-nav">
+      
+      <li><a class="sidenav-close light-blue darken-3 waves-effect" href="divinggg.html">Home</a></li>
+      <li><a class="sidenav-close light-blue darken-3 waves-effect" href="intro.html">Introduction</a></li>
+      <li><a class="sidenav-close light-blue darken-3 waves-effect" href="location.html">Location</a></li>
+      <li><a class="sidenav-close light-blue darken-3 waves-effect" href="underwater.html">Underwater</a></li>
+    
+    </ul>
+    <div class="container" style="font-size: 30px;color:navy">
+    <div id="iTitle"></div>
+    <div id="iImage"></div>
+    </div>
+    <!--【P.2版】套用MaterializeCSS Footer http://materializecss.com/footer.html -------------------->
+	<footer class="page-footer light-blue darken-3">
+	  <div class="container">
+		<div class="row">
+		  <div class="col l6 s12">
+			<h5><a class="white-text" href="#">about me</a></h5>
+			<a class="grey-text text-lighten-4" href="#">更多相關</a>
+		  </div>
+		  <div class="col l4 offset-l2 s12">
+			<h5 class="white-text">Links</h5>
+			<ul>
+			  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+			  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+			  
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer-copyright light-blue darken-3">
+		<div class="container">
+		
+		</div>
+	  </div>
+	</footer>
+	<!----------------------------------------------------------------------------------------------->
+ <!--JavaScript at end of body for optimized loading-->
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <!-- javascript -->
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="/Users/linjiaer/Desktop/4105023007/js/materialize-initial.js"></script>
+
+   
+  </body class="container">
+
+
+<script>
+        
+        var A=["美人洞<br>難度：★☆☆☆☆",
+               "花瓶岩<br>難度：★☆☆☆☆",
+               "杉福沉船<br>難度：★★★☆☆"];
+        var B=["https://msocean.com.tw/wp-content/uploads/2018/01/18020401_06-1024x683.jpg",
+               "https://msocean.com.tw/wp-content/uploads/2018/01/18020401_03-1024x683.jpg",
+               "https://msocean.com.tw/wp-content/uploads/2018/01/18020401_09-1024x683.jpg"];
+        
+        
+    var i = decodeURIComponent(GetUrlVar('a'));
+    var i = decodeURIComponent(GetUrlVar('b'));
+    document.getElementById("iTitle").innerHTML=A[i];
+    document.getElementById("iImage").innerHTML='<img src="'+B[i]+'">';
+	  
+		
+</script>
+</html>
+        
